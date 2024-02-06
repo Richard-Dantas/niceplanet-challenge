@@ -1,0 +1,170 @@
+[
+    {
+        "model": "vinculos_app.vinculos",
+        "pk": "1",
+        "fields": {
+          "idProdutor": "b38cda68-c00e-49f8-ad59-4cccda66a539",
+          "idPropriedade": "686fa2fb-6495-4562-8b75-2e665580a328"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "2",
+        "fields": {
+          "idProdutor": "05f82652-7705-45a6-bf36-106c9d0d5b73",
+          "idPropriedade": "44b4475b-a999-4b40-9684-0c715cc35e75"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "3",
+        "fields": {
+          "idProdutor": "9610163e-efea-4c9a-9585-df739c0e8a2e",
+          "idPropriedade": "24990dd7-86f4-49ee-bf19-e394529b7609"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "4",
+        "fields": {
+          "idProdutor": "b38cda68-c00e-49f8-ad59-4cccda66a539",
+          "idPropriedade": "936af13e-aa8a-4dcf-902e-db9594b042ca"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "5",
+        "fields": {
+          "idProdutor": "05f82652-7705-45a6-bf36-106c9d0d5b73",
+          "idPropriedade": "38caccf2-8d5e-4228-b441-20d3342da9cb"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "6",
+        "fields": {
+          "idProdutor": "6908e647-7b19-48f9-933a-687dc85b3839",
+          "idPropriedade": "38caccf2-8d5e-4228-b441-20d3342da9cb"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "7",
+        "fields": {
+          "idProdutor": "3d029fdb-0b9d-4a6c-921b-725593aa62b7",
+          "idPropriedade": "38caccf2-8d5e-4228-b441-20d3342da9cb"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "8",
+        "fields": {
+          "idProdutor": "a265b9d6-4369-422d-92bb-08bc87914040",
+          "idPropriedade": "df890c57-2005-4af9-a301-8673befe3b21"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "9",
+        "fields": {
+          "idProdutor": "6ca1b008-2627-4798-a278-8d3d8534a229",
+          "idPropriedade": "148e7e35-b856-49af-87cd-5a076052e217"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "10",
+        "fields": {
+          "idProdutor": "6908e647-7b19-48f9-933a-687dc85b3839",
+          "idPropriedade": "f184958d-e30f-412a-9894-a95225c35618"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "11",
+        "fields": {
+          "idProdutor": "05f82652-7705-45a6-bf36-106c9d0d5b73",
+          "idPropriedade": "936af13e-aa8a-4dcf-902e-db9594b042ca"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "12",
+        "fields": {
+          "idProdutor": "cbd9422f-0ac2-46e9-a784-e054410c33be",
+          "idPropriedade": "24990dd7-86f4-49ee-bf19-e394529b7609"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "13",
+        "fields": {
+          "idProdutor": "3d029fdb-0b9d-4a6c-921b-725593aa62b7",
+          "idPropriedade": "24990dd7-86f4-49ee-bf19-e394529b7609"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "14",
+        "fields": {
+          "idProdutor": "6ca1b008-2627-4798-a278-8d3d8534a229",
+          "idPropriedade": "df890c57-2005-4af9-a301-8673befe3b21"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "15",
+        "fields": {
+          "idProdutor": "6ca1b008-2627-4798-a278-8d3d8534a229",
+          "idPropriedade": "936af13e-aa8a-4dcf-902e-db9594b042ca"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "16",
+        "fields": {
+          "idProdutor": "05f82652-7705-45a6-bf36-106c9d0d5b73",
+          "idPropriedade": "24990dd7-86f4-49ee-bf19-e394529b7609"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "17",
+        "fields": {
+          "idProdutor": "3d029fdb-0b9d-4a6c-921b-725593aa62b7",
+          "idPropriedade": "44b4475b-a999-4b40-9684-0c715cc35e75"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "18",
+        "fields": {
+          "idProdutor": "cbd9422f-0ac2-46e9-a784-e054410c33be",
+          "idPropriedade": "44b4475b-a999-4b40-9684-0c715cc35e75"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "19",
+        "fields": {
+          "idProdutor": "6908e647-7b19-48f9-933a-687dc85b3839",
+          "idPropriedade": "936af13e-aa8a-4dcf-902e-db9594b042ca"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "20",
+        "fields": {
+          "idProdutor": "cbd9422f-0ac2-46e9-a784-e054410c33be",
+          "idPropriedade": "24990dd7-86f4-49ee-bf19-e394529b7609"
+        }
+      },
+      {
+        "model": "vinculos_app.vinculos",
+        "pk": "21",
+        "fields": {
+          "idProdutor": "cbd9422f-0ac2-46e9-a784-e054410c33be",
+          "idPropriedade": "38caccf2-8d5e-4228-b441-20d3342da9cb"
+        }
+      }
+]

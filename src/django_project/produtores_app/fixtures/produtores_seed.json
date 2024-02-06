@@ -1,0 +1,74 @@
+[
+    {
+      "model": "produtores_app.produtores",
+      "pk": "05f82652-7705-45a6-bf36-106c9d0d5b73",
+      "fields": {
+        "nomeProdutor": "Manuel Theo da Mata",
+        "registroIndividual": "353.920.370-20",
+        "status": true
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "3d029fdb-0b9d-4a6c-921b-725593aa62b7",
+      "fields": {
+        "nomeProdutor": "Petterson Abade",
+        "registroIndividual": "464.280.050-69",
+        "status": false
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "6908e647-7b19-48f9-933a-687dc85b3839",
+      "fields": {
+        "nomeProdutor": "Evelyn Camila Raquel Ramos",
+        "registroIndividual": "497.595.602-08",
+        "status": true
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "b38cda68-c00e-49f8-ad59-4cccda66a539",
+      "fields": {
+        "nomeProdutor": "Benjamin Bruno Nogueira",
+        "registroIndividual": "307.878.410-05",
+        "status": true
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "cbd9422f-0ac2-46e9-a784-e054410c33be",
+      "fields": {
+        "nomeProdutor": "Nome não Pode ser Nulo",
+        "registroIndividual": "029.958.740-10",
+        "status": false
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "a265b9d6-4369-422d-92bb-08bc87914040",
+      "fields": {
+        "nomeProdutor": "Renan Fábio Kaique Porto",
+        "registroIndividual": "224.963.380-07",
+        "status": true
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "6ca1b008-2627-4798-a278-8d3d8534a229",
+      "fields": {
+        "nomeProdutor": "Daniel Vitor",
+        "registroIndividual": "",
+        "status": true
+      }
+    },
+    {
+      "model": "produtores_app.produtores",
+      "pk": "9610163e-efea-4c9a-9585-df739c0e8a2e",
+      "fields": {
+        "nomeProdutor": "Valentina Esther Jéssica Alves",
+        "registroIndividual": "078.573.730-87",
+        "status": true
+      }
+    }
+  ]

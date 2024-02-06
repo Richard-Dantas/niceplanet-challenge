@@ -1,0 +1,119 @@
+[
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "44b4475b-a999-4b40-9684-0c715cc35e75",
+        "fields": {
+          "nomePropriedade": "Fazenda Bela Vista",
+          "numeroCar": "TO-15235304-5381E1396BB4E6TFBA16CA5AE14745213",
+          "uf": "TO",
+          "municipio": "Palmas",
+          "pais": "Brasil",
+          "status": true,
+          "liberado": 1
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "936af13e-aa8a-4dcf-902e-db9594b042ca",
+        "fields": {
+          "nomePropriedade": "Fazenda Boi Dourado 1",
+          "numeroCar": "PA-1714302-D3C4RFCWE4Q32E2FEWR34FCEW2E2323",
+          "uf": "PA",
+          "municipio": "Redenção",
+          "pais": "Brasil",
+          "status": true,
+          "liberado": 0
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "24990dd7-86f4-49ee-bf19-e394529b7609",
+        "fields": {
+            "nomePropriedade" : "Fazenda Sol Nascente",
+            "numeroCar" : "MG-2132633-E32F45G53AC8423BRY23UBR3Y9U",
+            "uf" : "MG",
+            "municipio" : "Belo Horizonte",
+            "pais" : "Brasil",
+            "status" : 1,
+            "liberado" : 1
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "38caccf2-8d5e-4228-b441-20d3342da9cb",
+        "fields": {
+          "nomePropriedade": "Fazenda Deus é Fiel",
+          "numeroCar": "MG-2132633-E32F45G53AC8423BRY23UBR3Y9U",
+          "uf": "MG",
+          "municipio": "Belo Horizonte",
+          "pais": "Brasil",
+          "status": true,
+          "liberado": 1
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "df890c57-2005-4af9-a301-8673befe3b21",
+        "fields": {
+            "nomePropriedade": "null",
+            "numeroCar" : "GO-5346543-FDESG45321CEWRQ543WQCWDVRE43WEQCEC",
+            "uf" : "GO",
+            "municipio" : "Morrinhos",
+            "pais" : "Brasil",
+            "status" : 1,
+            "liberado" : 0
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "148e7e35-b856-49af-87cd-5a076052e217",
+        "fields": {
+            "nomePropriedade" : "Fazenda Bananal",
+            "numeroCar" : "MA-2102804-2PNU380GY64UHORJNIPM9J84Y5UHTRJFK",
+            "uf" : "MA",
+            "municipio" : "Carolina",
+            "pais" : "Brasil",
+            "status" : 0,
+            "liberado" : 2
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "f184958d-e30f-412a-9894-a95225c35618",
+        "fields": {
+            "nomePropriedade" : "Fazenda Boi Dourado 2",
+            "numeroCar" : null,
+            "uf" : "TO",
+            "municipio" : "Porto Nacional",
+            "pais" : "Brasil",
+            "status" : 1,
+            "liberado" : 1
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "57180fd9-e2df-4b5b-a70f-2a290bd3735c",
+        "fields": {
+            "nomePropriedade" : "Fazenda Vale Estrelado",
+            "numeroCar" : "BA-1501204-5381E32RQ4G3BWTRVE2343G5RECX3245RE",
+            "uf" : "BA",
+            "municipio" : "Salvador",
+            "pais" : "Brasil",
+            "status" : 1,
+            "liberado" : 0
+        }
+    },
+    {
+        "model": "propriedades_app.propriedades",
+        "pk": "686fa2fb-6495-4562-8b75-2e665580a328",
+        "fields": {
+            "nomePropriedade" : "Fazenda do Vovô José",
+            "numeroCar" : "AP-5435423-43T5YTRREG4567JYTREW435Y67YTGF3245",
+            "uf" : "AP",
+            "municipio" : null,
+            "pais" : "Brasil",
+            "status" : 1,
+            "liberado" : 2
+        }
+    }
+]
