@@ -23,7 +23,7 @@ def produtor_test():
 def propriedade_test():
     return Propriedades(
         nomePropriedade="Propriedade da Silva",
-        numeroCar="TO-15235304-5381E1396BB4E6TFBA16CA5AE14745213",
+        numeroCar="TO-15235304-5381E1396BB4E6TFBA16CA5AE14745212",
         uf="TO",
         municipio="Palmas",
         pais="Brasil",
@@ -90,7 +90,7 @@ class TestRetrieveAPI:
         expected_data = {
             "idPropriedade": str(propriedade_test.idPropriedade),
             "nomePropriedade": "Propriedade da Silva",
-            "numeroCar": "TO-15235304-5381E1396BB4E6TFBA16CA5AE14745213",
+            "numeroCar": "TO-15235304-5381E1396BB4E6TFBA16CA5AE14745212",
             "uf": "TO",
             "municipio": "Palmas",
             "pais": "Brasil",

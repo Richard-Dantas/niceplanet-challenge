@@ -20,4 +20,4 @@ class Propriedades(models.Model):
         db_table = "Propriedades"
 
     def __str__(self):
-        return f"{self.get_status_display()} - {self.nomePropriedade} ({self.uf}, {self.municipio}, {self.pais})"
+        return f"{self.nomePropriedade} ({self.uf}, {self.municipio}, {self.pais})"

@@ -82,7 +82,7 @@
         "pk": "f184958d-e30f-412a-9894-a95225c35618",
         "fields": {
             "nomePropriedade" : "Fazenda Boi Dourado 2",
-            "numeroCar" : null,
+            "numeroCar" : "null",
             "uf" : "TO",
             "municipio" : "Porto Nacional",
             "pais" : "Brasil",
@@ -110,7 +110,7 @@
             "nomePropriedade" : "Fazenda do Vovô José",
             "numeroCar" : "AP-5435423-43T5YTRREG4567JYTREW435Y67YTGF3245",
             "uf" : "AP",
-            "municipio" : null,
+            "municipio" : "null",
             "pais" : "Brasil",
             "status" : 1,
             "liberado" : 2
