@@ -190,3 +190,10 @@ setuptools                    69.0.2
 sqlparse                      0.4.4
 wheel                         0.42.0
 ```
+
+Agora com a adição do Swagger:
+
+Acesse a rota /docs após ter executado o comando python manage.py runserver e já ter criado o superuser.
+Em "Authorize" insira as credenciais do seu superuser e então você poderá utilizar as rotas normalmente.
+
+O arquivo que continha a json do postman estava com o nome rotas.postman_collection e foi atualizado para rotas.json
