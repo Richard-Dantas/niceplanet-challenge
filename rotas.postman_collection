@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "e09a7a7b-5a5f-4ae8-910e-3d4608bf1ce4",
+		"name": "produtores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24324036"
+	},
+	"item": [
+		{
+			"name": "propriedades",
+			"item": [
+				{
+					"name": "Buscar Por NumeroCar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3ODUzNzgwLCJpYXQiOjE3MDc4NTM0ODAsImp0aSI6Ijk2Mzc0Y2IxYzRhMzQ1ODY5ZWI5M2Q0MjMxNjg1ODNkIiwidXNlcl9pZCI6MX0.EDtMrxzuxNULDAogw7qs1GaG2WAOpNuU_wptcGsNTFc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/propriedades/f184958d-e30f-412a-9894-a95225c35618/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"propriedades",
+								"f184958d-e30f-412a-9894-a95225c35618",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analise Historico",
+			"item": [
+				{
+					"name": "Listar Analise Historico",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Analise Historico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/analiseHistoricos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"analiseHistoricos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Por ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3ODU0NjUyLCJpYXQiOjE3MDc4NTQzNTIsImp0aSI6IjZhYjJhZGViZDc1YTQ5NmZiMjRkZTQ2MDliNGMwNmI5IiwidXNlcl9pZCI6MX0.T18Pid0-yIG1treQChVx_UxL6SBVsj-gzm2t_ywWp_A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/analiseHistoricos/3c305bfc-5607-4989-bab7-b0b6d2892c78/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"analiseHistoricos",
+								"3c305bfc-5607-4989-bab7-b0b6d2892c78",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Criar Produtor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProdutor\": \"Produtor de Teste\",\r\n    \"registroIndividual\": \"123.456.789-10\",\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produtores/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produtores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Produtor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/produtores/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produtores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Por ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3ODUyNzc4LCJpYXQiOjE3MDc4NTI0NzgsImp0aSI6IjlkNGFiOGZmNmFhYjRlYzBiYjgyOTBiMTQ5YzI1Y2U3IiwidXNlcl9pZCI6MX0.RpMWTyazO0bICRv4ywwjtgHQSMb6SeTYGif4wOar0II",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/produtores/6ca1b008-2627-4798-a278-8d3d8534a229/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produtores",
+						"6ca1b008-2627-4798-a278-8d3d8534a229",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Produtor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3ODUyNzEyLCJpYXQiOjE3MDc4NTI0MTIsImp0aSI6ImExYmYxNjI4OGJhMjQ4Y2Y4NzlmOWM0YzVmYTU2ZGUzIiwidXNlcl9pZCI6MX0.8tBlsCB7RPalmQfRE0aQ_PXJ5sQmzw8r5MTWHT4jJW0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"nomeProdutor\": \"Daniel Vitor\",\r\n                \"registroIndividual\": \"123.456.789-10\",\r\n                \"status\": true\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produtores/6ca1b008-2627-4798-a278-8d3d8534a229/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produtores",
+						"6ca1b008-2627-4798-a278-8d3d8534a229",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
