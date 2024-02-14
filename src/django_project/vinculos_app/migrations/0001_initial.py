@@ -5,7 +5,7 @@ from django.db import migrations, models
 from django.core.management import call_command
 
 def load_data(apps, schema_editor):
-    call_command('loaddata', 'propriedades_seed.json')
+    call_command('loaddata', 'vinculos_seed.json')
 
 class Migration(migrations.Migration):
 

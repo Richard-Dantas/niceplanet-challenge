@@ -1,4 +1,6 @@
 from uuid import UUID
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
@@ -15,6 +17,11 @@ from django_project.analiseHistoricos_app.repository import DjangoORMAnaliseHist
 from django_project.analiseHistoricos_app.serializers import CreateAnaliseHistoricoRequestSerializer, CreateAnaliseHistoricoResponseSerializer, DeleteAnaliseHistoricoRequestSerializer, ListAnaliseHistoricoResponseSerializer, RetrieveAnaliseHistoricoRequestSerializer, RetrieveAnaliseHistoricoResponseSerializer
 
 class AnaliseHistoricoViewSet(viewsets.ViewSet):
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de listagem de casos analisados que faz parte do escopo de teste e retorna informações básicas do caso analisado",
+        responses={200: openapi.Response('Success', ListAnaliseHistoricoResponseSerializer)},
+        tags=['AnaliseHistorico'],
+    )
     def list(self, request: Request):
         input = ListAnaliseHistoricoRequest()
 
@@ -25,6 +32,11 @@ class AnaliseHistoricoViewSet(viewsets.ViewSet):
 
         return Response(status=HTTP_200_OK, data=serializer.data)
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de busca de casos analisados a partir de seu ID que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        responses={200: openapi.Response('Success', RetrieveAnaliseHistoricoResponseSerializer)},
+        tags=['AnaliseHistorico'],
+    )
     def retrieve(self, request: Request, pk=None):
         serializer = RetrieveAnaliseHistoricoRequestSerializer(data={"idAnaliseHistorico": pk})
         serializer.is_valid(raise_exception=True)
@@ -44,6 +56,12 @@ class AnaliseHistoricoViewSet(viewsets.ViewSet):
             data= produtor_output.data,
         )
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de criação de casos analisados que NÃO FAZ parte do escopo do teste e não está funcional",
+        request_body=CreateAnaliseHistoricoRequestSerializer,
+        responses={200: openapi.Response('Success')},
+        tags=['AnaliseHistorico'],
+    )
     def create(self, request: Request) -> Response:
         serializer = CreateAnaliseHistoricoRequestSerializer(data = request.data)
         serializer.is_valid(raise_exception=True)
@@ -57,6 +75,11 @@ class AnaliseHistoricoViewSet(viewsets.ViewSet):
             data=CreateAnaliseHistoricoResponseSerializer(instance=output).data,
         )
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de deleção de casos analisados que faz parte do escopo de teste e retorna um código de sucesso",
+        responses={200: openapi.Response('Success')},
+        tags=['AnaliseHistorico'],
+    )
     def destroy(self, request: Request, pk=None) -> Response:
         serializer = DeleteAnaliseHistoricoRequestSerializer(data={"idAnaliseHistorico": pk})
         serializer.is_valid(raise_exception=True)

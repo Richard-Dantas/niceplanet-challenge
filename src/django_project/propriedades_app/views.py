@@ -1,4 +1,6 @@
 from uuid import UUID
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND, HTTP_201_CREATED, HTTP_204_NO_CONTENT
@@ -18,6 +20,11 @@ from django_project.propriedades_app.serializers import CreatePropriedadesReques
 from django_project.vinculos_app.repository import DjangoORMVinculosRepository
 
 class PropriedadesViewSet(viewsets.ViewSet):
+    @swagger_auto_schema(
+        operation_description="Esta é a rota de busca de propriedades a partir de seu numeroCar que faz parte do escopo do teste, retornando os atributos de propriedade que foram solicitados bem como atributos dos produtores vinculados. Você pode testar buscar por exemplo: MA-2102804-2PNU380GY64UHORJNIPM9J84Y5UHTRJFK",
+        responses={200: openapi.Response('Success', RetrievePropriedadesResponseSerializer)},
+        tags=['Propriedades'],
+    )
     def retrieve(self, request: Request, pk=None):
         serializer = RetrievePropriedadesRequestSerializer(data={"numeroCar": pk})
         serializer.is_valid(raise_exception=True)
@@ -45,6 +52,12 @@ class PropriedadesViewSet(viewsets.ViewSet):
             data= propriedade_output.data,
         )
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de criação de propriedades que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        request_body=CreatePropriedadesRequestSerializer,
+        responses={200: openapi.Response('Success', CreatePropriedadesResponseSerializer)},
+        tags=['Propriedades'],
+    )
     def create(self, request: Request) -> Response:
         serializer = CreatePropriedadesRequestSerializer(data = request.data)
         serializer.is_valid(raise_exception=True)
@@ -58,6 +71,12 @@ class PropriedadesViewSet(viewsets.ViewSet):
             data=CreatePropriedadesResponseSerializer(instance=output).data,
         )
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de edição/atualização de propriedades que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        request_body=PatchPropriedadesRequestSerializer,
+        responses={200: openapi.Response('Success')},
+        tags=['Propriedades'],
+    )
     def update(self, request: Request, pk:UUID=None) -> Response:
         serializer = PatchPropriedadesRequestSerializer(
             data = {

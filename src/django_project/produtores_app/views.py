@@ -1,4 +1,6 @@
 from uuid import UUID
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
@@ -15,6 +17,11 @@ from django_project.produtores_app.repository import DjangoORMProdutoresReposito
 from django_project.produtores_app.serializers import CreateProdutoresRequestSerializer, CreateProdutoresResponseSerializer, DeleteProdutoresRequestSerializer, ListProdutoresResponseSerializer, RetrieveProdutoresRequestSerializer, RetrieveProdutoresResponseSerializer, UpdateProdutoresRequestSerializer
 
 class ProdutoresViewSet(viewsets.ViewSet):
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de listagem de produtores que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        responses={200: openapi.Response('Success', ListProdutoresResponseSerializer)},
+        tags=['Produtores'],
+    )
     def list(self, request: Request):
         input = ListProdutoresRequest()
 
@@ -25,6 +32,11 @@ class ProdutoresViewSet(viewsets.ViewSet):
 
         return Response(status=HTTP_200_OK, data=serializer.data)
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de busca de produtores a partir do seu ID que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        responses={200: openapi.Response('Success', RetrieveProdutoresResponseSerializer)},
+        tags=['Produtores'],
+    )
     def retrieve(self, request: Request, pk=None):
         serializer = RetrieveProdutoresRequestSerializer(data={"idProdutor": pk})
         serializer.is_valid(raise_exception=True)
@@ -43,6 +55,12 @@ class ProdutoresViewSet(viewsets.ViewSet):
             data= produtor_output.data,
         )
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de criação de produtores que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        request_body=CreateProdutoresRequestSerializer,
+        responses={200: openapi.Response('Success', CreateProdutoresResponseSerializer)},
+        tags=['Produtores'],
+    )
     def create(self, request: Request) -> Response:
         serializer = CreateProdutoresRequestSerializer(data = request.data)
         serializer.is_valid(raise_exception=True)
@@ -56,6 +74,12 @@ class ProdutoresViewSet(viewsets.ViewSet):
             data=CreateProdutoresResponseSerializer(instance=output).data,
         )
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de edição/atualização de produtores que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        request_body=UpdateProdutoresRequestSerializer,
+        responses={200: openapi.Response('Success')},
+        tags=['Produtores'],
+    )
     def update(self, request: Request, pk:UUID=None) -> Response:
         serializer = UpdateProdutoresRequestSerializer(
             data = {
@@ -74,6 +98,11 @@ class ProdutoresViewSet(viewsets.ViewSet):
 
         return Response(status = HTTP_204_NO_CONTENT)
     
+    @swagger_auto_schema(
+        operation_description="Esta é uma rota de deleção de produtores que apesar de não fazer parte do escopo do teste, está funcional e pode ser utilizada",
+        responses={200: openapi.Response('Success')},
+        tags=['Produtores'],
+    )
     def destroy(self, request: Request, pk=None) -> Response:
         serializer = DeleteProdutoresRequestSerializer(data={"idProdutor": pk})
         serializer.is_valid(raise_exception=True)

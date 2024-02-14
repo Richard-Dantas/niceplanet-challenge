@@ -58,7 +58,7 @@
       "pk": "6ca1b008-2627-4798-a278-8d3d8534a229",
       "fields": {
         "nomeProdutor": "Daniel Vitor",
-        "registroIndividual": "",
+        "registroIndividual": "123.456.789-10",
         "status": true
       }
     },
